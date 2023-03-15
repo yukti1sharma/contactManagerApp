@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="55dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:gravity="center"
+        android:text="Welcome TO CONTACT MANAGER APP !!"
+        android:textColor="@color/dark_blue"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSign"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alegreya_sc"
+        android:gravity="center"
+        android:text="Sign Up To Continue "
+        android:textColor="@color/dark_blue"
+        android:textSize="22dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:startIconDrawable="@drawable/baseline_mail_24"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etMail"
+            android:textColor="@color/dark_blue"
+            android:textStyle="normal"
+            android:hint="Enter your Mail Address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:helperTextTextColor="@color/white"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_gravity="center"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:id="@+id/etName"
+            android:textColorHint="@color/dark_blue"
+            android:textColor="@color/dark_blue"
+            android:hint="Enter your Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/dark_blue"
+        app:boxStrokeColor="@color/dark_blue"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:id="@+id/etPassword"
+            android:hint="Enter your Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/baseline_verified_user_24"
+        android:layout_gravity="center"
+        app:hintTextColor="@color/dark_blue"
+        app:boxStrokeColor="@color/dark_blue"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:id="@+id/etUser"
+            android:hint="Enter your UserName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="sign up"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/dark_blue"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="ALREADY AN EXISTING USER?? CLICK LOGIN " />
+
+</LinearLayout>
